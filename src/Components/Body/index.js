@@ -1,4 +1,15 @@
 import React from "react";
+import { useEffect } from "react";
+
+const [Email, setEmail] = useEffect("") =>{
+};
+
+const [Password, setPassword] = useEffect("");
+const btnClick = (e) => {e.target.Email(setEmail)
+    e.target.Password(setPassword)
+  console.log("email: ", Email);
+  console.log("password: ", Password);
+};
 
 const Body = () => {
   return (
@@ -16,17 +27,20 @@ const Body = () => {
       >
         <input
           type="text"
-          value="Email"
+          value={Email}
           placeholder="Enter your email"
           style={{ fontSize: "2rem" }}
         ></input>
         <input
           type="password"
-          value="Password"
+          value={Password}
           placeholder="Enter your password"
           style={{ fontSize: "2rem" }}
         ></input>
-        <button style={{ borderRadius: "5rem", padding: "0.5rem" }}>
+        <button
+          style={{ borderRadius: "5rem", padding: "0.5rem" }}
+          onChange={btnClick()}
+        >
           Login
         </button>
       </div>
