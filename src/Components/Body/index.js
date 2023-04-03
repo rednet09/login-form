@@ -3,16 +3,32 @@ import React from "react";
 const Body = () => {
   return (
     <>
-      <div>
+      <div style={{ paddingTop: "4rem" }}>
         <h1>Login</h1>
       </div>
-      <div>
-        <input type="text" value="Email" placeholder="Enter your email"></input>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "2rem",
+          padding: "3rem",
+        }}
+      >
+        <input
+          type="text"
+          value="Email"
+          placeholder="Enter your email"
+          style={{ fontSize: "2rem" }}
+        ></input>
         <input
           type="password"
           value="Password"
           placeholder="Enter your password"
+          style={{ fontSize: "2rem" }}
         ></input>
+        <button style={{ borderRadius: "5rem", padding: "0.5rem" }}>
+          Login
+        </button>
       </div>
     </>
   );

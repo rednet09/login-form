@@ -11,7 +11,9 @@ const Footer = () => {
           width: "100%",
         }}
       >
-        <h3>this is a footer</h3>
+        <div style={{ textAlign: "center" }}>
+          <h3>this is a footer</h3>
+        </div>
       </div>
     </>
   );
