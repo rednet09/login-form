@@ -1,12 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
 // learn use effect
-const [Email, setEmail] = useEffect("") =>{
-};
+const [Email, setEmail] = useEffect("") 
 
 const [Password, setPassword] = useEffect("");
-const btnClick = (e) => {e.target.Email(setEmail)
-    e.target.Password(setPassword)
+const btnClick = (e) => {
   console.log("email: ", Email);
   console.log("password: ", Password);
 };
